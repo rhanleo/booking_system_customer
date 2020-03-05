@@ -121,7 +121,7 @@
                 </div>
             @endif
 
-            <div class="content" style="margin-top: 80px;">
+            <div class="content" style="margin-top: 20%;">
                 <div class="container">
                     <div class="row" style='margin-top: 25%;'>
                                 @foreach($vendors as $vendor)
