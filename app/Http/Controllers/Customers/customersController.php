@@ -56,9 +56,11 @@ class customersController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
+		$id = Customers::all();
         $uuid = (string) Str::uuid();
         $res =  Customers::create([
             'uuid' =>  $uuid ,
+			'id' => count($id) +1,
             'name' => $request['name'],
             'email' => $request['email'],
             'is_live' => 'Y',

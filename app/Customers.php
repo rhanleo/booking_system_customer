@@ -15,6 +15,6 @@ class Customers extends Authenticatable
     protected $guard = 'customer';
 
     protected $fillable = [
-        'uuid', 'created_at', 'updated_at','name', 'email', 'password','api_token','is_live'
+        'uuid', 'id', 'created_at', 'updated_at','name', 'email', 'password','api_token','is_live'
     ];
 }
